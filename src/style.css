@@ -1,3 +1,8 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url(./BebasNeue-Regular.ttf);
+}
 .hello {
-    color:red;
+    font-family: 'BebasNeue';
+    color:palegoldenrod;
 }
