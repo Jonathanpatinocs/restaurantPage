@@ -1,17 +1,22 @@
 import _ from 'lodash';
-import './style.css';
-import Icon from './icon-light.png';
+import './style-home.css';
+import './main.css'
+import Logo from './logo-light.png';
+import { createHomePage }from './home.js';
 
-function component() {
-    const element = document.createElement('div');
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ')
-    element.classList.add('hello');
 
-    const icon_light = new Image();
-    icon_light.src = Icon;
+function createHeader() {
+    const header = document.getElementById('header');
+    const headerTitle = document.createElement('div');
+    const nav = document.getElementById('nav');
+    const logo = new Image();
+    logo.src = Logo;
+    logo.id = 'headerLogo';
+    headerTitle.innerHTML = _.join(['Johnys', 'Coffee'], ' ')
+    headerTitle.classList.add('headerTitle');
 
-    element.appendChild(icon_light);
-    return element;
+    headerTitle.appendChild(logo);
+    header.insertBefore(headerTitle, nav);
 }
-console.log("helo");
-document.body.appendChild(component());
+
+createHeader();

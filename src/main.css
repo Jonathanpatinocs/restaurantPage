@@ -1,0 +1,60 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url(./BebasNeue-Regular.ttf);
+}
+:root {
+    --offwhite: #F8F4E1;
+    --brownlight: #AF8F6F;
+    --brown: #74512D;
+    --browndark: #543310;
+}
+body{
+    margin:0;
+}
+
+#headerLogo {
+    width: 7rem;
+    height: 7rem;
+    
+}
+.headerTitle {
+    font-family: 'BebasNeue';
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+    gap: 10px;
+
+}
+nav {
+    
+}
+nav button {
+    color: var(--offwhite);
+    background-color: var(--brown);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: solid 1px var(--browndark);
+    width: 100px;
+    height: 25px;
+}
+nav button:hover {
+    background-color: var(--brownlight);
+
+}
+.pageSelected {
+    background-color: var(--brownlight);
+    border-bottom-color: var(--brownlight);
+}
+header {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--offwhite);
+    
+}
+#content {
+    height: 100%;
+    background-color: var(--brownlight);
+}
+
