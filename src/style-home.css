@@ -93,3 +93,27 @@
 }
 
 /* About Page*/
+
+#about {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    color: var(--browndark);
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 50px;
+}
+#about p {
+    font-size: 20px;
+}
+
+#aboutFooter {
+    margin-top: 100px;
+}
+#aboutFooter caption {
+    text-align: left;
+}

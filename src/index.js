@@ -4,7 +4,7 @@ import './main.css'
 import Logo from './logo-light.png';
 import { createHomePage }from './home.js';
 import { createMenuPage } from './menu';
-
+import { createAboutPage } from './about';
 
 function createHeader() {
     const header = document.getElementById('header');
@@ -47,6 +47,7 @@ menuButton.addEventListener('click', ()=> {
 })
 aboutButton.addEventListener('click', ()=> {
     clear();
+    createAboutPage();
     aboutButton.classList.add('pageSelected');
 })
 
