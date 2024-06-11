@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import _, { first } from 'lodash';
 import './style-home.css';
 import './main.css'
 import Logo from './logo-light.png';
@@ -18,5 +18,38 @@ function createHeader() {
     headerTitle.appendChild(logo);
     header.insertBefore(headerTitle, nav);
 }
+
+const homeButton = document.getElementById('Home');
+const menuButton = document.getElementById('Menu');
+const aboutButton = document.getElementById('About');
+const contentDiv = document.getElementById('content');
+
+function clear() {
+    while(contentDiv.firstChild) {
+        contentDiv.removeChild(contentDiv.lastChild);
+    }
+    homeButton.classList.remove('pageSelected');
+    menuButton.classList.remove('pageSelected');
+    aboutButton.classList.remove('pageSelected')
+}
+
+homeButton.addEventListener('click' , () => {
+    clear();
+    createHomePage();
+    homeButton.classList.add('pageSelected');
+})
+
+menuButton.addEventListener('click', ()=> {
+    clear();
+    menuButton.classList.add('pageSelected');
+})
+aboutButton.addEventListener('click', ()=> {
+    clear();
+    aboutButton.classList.add('pageSelected');
+})
+
 createHomePage();
 createHeader();
+
+
+
