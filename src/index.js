@@ -18,5 +18,5 @@ function createHeader() {
     headerTitle.appendChild(logo);
     header.insertBefore(headerTitle, nav);
 }
-
+createHomePage();
 createHeader();
