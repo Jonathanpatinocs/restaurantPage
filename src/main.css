@@ -25,9 +25,6 @@ body{
     gap: 10px;
 
 }
-nav {
-    
-}
 nav button {
     color: var(--offwhite);
     background-color: var(--brown);

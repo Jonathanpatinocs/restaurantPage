@@ -67,7 +67,29 @@
 
 /* Menu Page*/
 
+#menu {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+    color: var(--browndark)
+    
+}
+#menu h1 {
+    margin: 0;
+    text-align: center;
+}
+.menuItems {
+    display: flex;
+    align-items: center;
+}
 
-
+.menuPrice {
+    margin-left:auto;
+}
+#menuFooter {
+    color: var(--offwhite);
+    margin-top: 100px;
+    text-align: center;
+}
 
 /* About Page*/

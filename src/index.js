@@ -3,6 +3,7 @@ import './style-home.css';
 import './main.css'
 import Logo from './logo-light.png';
 import { createHomePage }from './home.js';
+import { createMenuPage } from './menu';
 
 
 function createHeader() {
@@ -41,6 +42,7 @@ homeButton.addEventListener('click' , () => {
 
 menuButton.addEventListener('click', ()=> {
     clear();
+    createMenuPage();
     menuButton.classList.add('pageSelected');
 })
 aboutButton.addEventListener('click', ()=> {
